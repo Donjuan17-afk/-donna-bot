@@ -35,7 +35,7 @@ async function askDonna(chatId, userMessage) {
   var history = getHistory(chatId).slice(-20);
   try {
     var response = await anthropic.messages.create({
-      model: 'claude-sonnet-4-20250514',
+      model: 'claude-sonnet-4-5',
       max_tokens: 1024,
       system: DONNA_SYSTEM,
       messages: history
