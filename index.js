@@ -44,7 +44,7 @@ async function askDonna(chatId, userMessage) {
     remember(chatId, 'assistant', reply);
     return reply;
   } catch (err) {
-    return 'Having trouble connecting. Try again.';
+    return 'Error: ' + err.message;
   }
 }
 
